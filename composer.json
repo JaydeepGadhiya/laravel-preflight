@@ -1,0 +1,48 @@
+{
+    "name": "jaydeep/laravel-preflight",
+    "description": "Artisan command that scans your Laravel codebase for breaking changes and compatibility issues before you upgrade to Laravel 9, 10, 11, 12, or 13.",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "upgrade",
+        "preflight",
+        "laravel-preflight",
+        "upgrade-assistant",
+        "upgrade-checker",
+        "breaking-changes",
+        "compatibility",
+        "laravel-upgrade",
+        "laravel-upgrade-tool",
+        "laravel-migration",
+        "artisan",
+        "version-upgrade",
+        "php-upgrade",
+        "static-analysis"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jaydeep Gadhiya"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/console": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0",
+        "illuminate/support": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0",
+        "illuminate/filesystem": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jaydeep\\UpgradeAssistant\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jaydeep\\UpgradeAssistant\\UpgradeAssistantServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
